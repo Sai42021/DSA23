@@ -1,0 +1,14 @@
+Course management service
+* Implements isolated functions that support concurrent client applications
+
+Get all courses function
+* curl http://localhost:8080/courses/all
+
+Create new course function
+* curl -X POST http://localhost:8080/courses/create -H "Content-Type: application/json" -d "{\"code\": 123, \"designation\": \"Intro to programming\", \"credit\": 3}"
+
+Get a specific course function
+* curl -X GET "http://localhost:8080/courses/course?code=123"
+
+DELETE a specific course 
+* curl -X DELETE "http://localhost:8080/courses/course?code=123"
