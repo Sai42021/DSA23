@@ -1,0 +1,6 @@
+Client application command for people
+* curl http://localhost:8080/people
+* POST function creates new person
+* POST function raises error
+* curl -X POST http://localhost:8080/people -
+d '{"id":"4", "name":"James Dean"}'
